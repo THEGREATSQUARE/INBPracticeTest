@@ -13,10 +13,56 @@ app.use(express.static('public'));
 // Load question bank
 let questionBank;
 try {
-  const data = fs.readFileSync('questionbank.json', 'utf8');
+  // Try different possible paths for the questionbank.json file
+  const possiblePaths = [
+    path.join(__dirname, 'questionbank.json'),
+    path.join(__dirname, '..', 'questionbank.json'),
+    path.join(process.cwd(), 'questionbank.json'),
+    './questionbank.json'
+  ];
+  
+  let data;
+  for (const filePath of possiblePaths) {
+    try {
+      data = fs.readFileSync(filePath, 'utf8');
+      console.log('Found questionbank.json at:', filePath);
+      break;
+    } catch (err) {
+      console.log('Tried path:', filePath, '- not found');
+    }
+  }
+  
+  if (!data) {
+    throw new Error('Could not find questionbank.json in any expected location');
+  }
+  
   questionBank = JSON.parse(data);
+  console.log('Question bank loaded successfully with', questionBank.questions.length, 'questions');
 } catch (error) {
   console.error('Error loading question bank:', error);
+  // Create a fallback question bank to prevent complete failure
+  questionBank = {
+    meta: {
+      course: "INB 300 - International Business",
+      chapters: {
+        "1": "Global Business",
+        "2": "Institutions & Business Environment", 
+        "3": "Culture, Ethics & Informal Institutions",
+        "4": "Resources, Capabilities & Strategy"
+      }
+    },
+    questions: [
+      {
+        id: "FALLBACK-001",
+        ch: "1",
+        type: "MCQ",
+        q: "What is International Business?",
+        opts: ["Business within one country", "Business across borders", "Only exports", "Only imports"],
+        ans: "B",
+        exp: "International business involves business activities across national borders."
+      }
+    ]
+  };
 }
 
 // Store user progress (in production, use a database)
@@ -38,33 +84,58 @@ let userProgress = {
 
 // Get all questions
 app.get('/api/questions', (req, res) => {
-  res.json(questionBank.questions);
+  try {
+    res.json(questionBank.questions);
+  } catch (error) {
+    console.error('Error getting questions:', error);
+    res.status(500).json({ error: 'Failed to get questions' });
+  }
 });
 
 // Get questions by chapter
 app.get('/api/questions/chapter/:chapter', (req, res) => {
-  const chapter = req.params.chapter;
-  const chapterQuestions = questionBank.questions.filter(q => q.ch === chapter);
-  res.json(chapterQuestions);
+  try {
+    const chapter = req.params.chapter;
+    const chapterQuestions = questionBank.questions.filter(q => q.ch === chapter);
+    res.json(chapterQuestions);
+  } catch (error) {
+    console.error('Error getting chapter questions:', error);
+    res.status(500).json({ error: 'Failed to get chapter questions' });
+  }
 });
 
 // Get questions by type
 app.get('/api/questions/type/:type', (req, res) => {
-  const type = req.params.type.toUpperCase();
-  const typeQuestions = questionBank.questions.filter(q => q.type === type);
-  res.json(typeQuestions);
+  try {
+    const type = req.params.type.toUpperCase();
+    const typeQuestions = questionBank.questions.filter(q => q.type === type);
+    res.json(typeQuestions);
+  } catch (error) {
+    console.error('Error getting type questions:', error);
+    res.status(500).json({ error: 'Failed to get type questions' });
+  }
 });
 
 // Get random questions for practice
 app.get('/api/questions/random/:count', (req, res) => {
-  const count = parseInt(req.params.count) || 10;
-  const shuffled = [...questionBank.questions].sort(() => 0.5 - Math.random());
-  res.json(shuffled.slice(0, count));
+  try {
+    const count = parseInt(req.params.count) || 10;
+    const shuffled = [...questionBank.questions].sort(() => 0.5 - Math.random());
+    res.json(shuffled.slice(0, count));
+  } catch (error) {
+    console.error('Error getting random questions:', error);
+    res.status(500).json({ error: 'Failed to get random questions' });
+  }
 });
 
 // Get course metadata
 app.get('/api/meta', (req, res) => {
-  res.json(questionBank.meta);
+  try {
+    res.json(questionBank.meta);
+  } catch (error) {
+    console.error('Error getting metadata:', error);
+    res.status(500).json({ error: 'Failed to get metadata' });
+  }
 });
 
 // Submit quiz results
@@ -172,9 +243,24 @@ app.get('/api/matching', (req, res) => {
   res.json(matchingPairs);
 });
 
+// Test endpoint
+app.get('/api/test', (req, res) => {
+  res.json({ 
+    status: 'OK', 
+    message: 'API is working',
+    questionCount: questionBank.questions.length,
+    timestamp: new Date().toISOString()
+  });
+});
+
 // Serve main page
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  try {
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+  } catch (error) {
+    console.error('Error serving main page:', error);
+    res.status(500).send('Error loading page');
+  }
 });
 
 // Export for Vercel
