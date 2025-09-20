@@ -252,9 +252,46 @@ app.get('/api/test', (req, res) => {
   });
 });
 
-// Serve main page - redirect to static file
+// Serve main page
 app.get('/', (req, res) => {
-  res.redirect('/index.html');
+  try {
+    const htmlPath = path.join(__dirname, '..', 'public', 'index.html');
+    res.sendFile(htmlPath);
+  } catch (error) {
+    console.error('Error serving main page:', error);
+    res.status(500).send('Error loading page');
+  }
+});
+
+// Serve static files
+app.get('/css/:filename', (req, res) => {
+  try {
+    const filePath = path.join(__dirname, '..', 'public', 'css', req.params.filename);
+    res.sendFile(filePath);
+  } catch (error) {
+    console.error('Error serving CSS:', error);
+    res.status(404).send('CSS file not found');
+  }
+});
+
+app.get('/js/:filename', (req, res) => {
+  try {
+    const filePath = path.join(__dirname, '..', 'public', 'js', req.params.filename);
+    res.sendFile(filePath);
+  } catch (error) {
+    console.error('Error serving JS:', error);
+    res.status(404).send('JS file not found');
+  }
+});
+
+app.get('/images/:filename', (req, res) => {
+  try {
+    const filePath = path.join(__dirname, '..', 'public', 'images', req.params.filename);
+    res.sendFile(filePath);
+  } catch (error) {
+    console.error('Error serving image:', error);
+    res.status(404).send('Image not found');
+  }
 });
 
 // Export for Vercel
