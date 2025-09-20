@@ -8,7 +8,6 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public'));
 
 // Load question bank
 let questionBank;
@@ -253,14 +252,9 @@ app.get('/api/test', (req, res) => {
   });
 });
 
-// Serve main page
+// Serve main page - redirect to static file
 app.get('/', (req, res) => {
-  try {
-    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
-  } catch (error) {
-    console.error('Error serving main page:', error);
-    res.status(500).send('Error loading page');
-  }
+  res.redirect('/index.html');
 });
 
 // Export for Vercel
