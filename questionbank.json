@@ -1,0 +1,1459 @@
+{
+  "meta": {
+    "course": "INB 300 - International Business",
+    "chapters": {
+      "1": "Global Business",
+      "2": "Institutions & Business Environment",
+      "3": "Culture, Ethics & Informal Institutions",
+      "4": "Resources, Capabilities & Strategy"
+    },
+    "sources": [
+      "Chapter 1 Study Guide:contentReference[oaicite:4]{index=4}",
+      "Chapter 2 Study Guide:contentReference[oaicite:5]{index=5}",
+      "Chapter 3 Study Guide:contentReference[oaicite:6]{index=6}",
+      "Chapter 4 Study Guide:contentReference[oaicite:7]{index=7}"
+    ]
+  },
+  "questions": [
+    {
+      "id": "CH1-M01",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Which statement best distinguishes Global Business from International Business (IB)?",
+      "opts": [
+        "Global Business excludes domestic activity",
+        "IB includes domestic activities affecting global markets",
+        "Global Business includes both cross-border and relevant domestic activities",
+        "Global Business refers only to MNE activity"
+      ],
+      "ans": "C",
+      "exp": "Global business covers international and domestic activities tied to the global economy."
+    },
+    {
+      "id": "CH1-M02",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "A Multinational Enterprise (MNE) is defined primarily by its:",
+      "opts": [
+        "Export intensity",
+        "Foreign direct investment (FDI)",
+        "Foreign employees",
+        "Listing on multiple exchanges"
+      ],
+      "ans": "B",
+      "exp": "MNEs engage in FDI, not just exporting."
+    },
+    {
+      "id": "CH1-M03",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "The G-20 consists of:",
+      "opts": [
+        "20 countries selected by the UN",
+        "19 major countries plus the EU",
+        "BRICS plus G7",
+        "OECD members plus the EU"
+      ],
+      "ans": "B",
+      "exp": "G-20 = 19 countries + EU."
+    },
+    {
+      "id": "CH1-M04",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "'International premium' refers to:",
+      "opts": [
+        "Tax credits for overseas work",
+        "Higher compensation for expatriate roles",
+        "Reduced social benefits abroad",
+        "Equity-only pay packages overseas"
+      ],
+      "ans": "B",
+      "exp": "Working abroad often carries a pay premium."
+    },
+    {
+      "id": "CH1-M05",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Which question anchors the book’s unified framework?",
+      "opts": [
+        "How exchange rates affect exports",
+        "What determines firms’ success/failure globally",
+        "How to measure GDP vs. GNI",
+        "Why institutions change slowly"
+      ],
+      "ans": "B",
+      "exp": "Fundamental question centers on firm success/failure worldwide."
+    },
+    {
+      "id": "CH1-M06",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "The institution-based view argues that firm outcomes are shaped mainly by:",
+      "opts": [
+        "Industry rivalry",
+        "Macroeconomic cycles",
+        "Rules, norms, and laws",
+        "Firm age and size"
+      ],
+      "ans": "C",
+      "exp": "Institutions enable and constrain behavior."
+    },
+    {
+      "id": "CH1-M07",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "'Liability of foreignness' captures:",
+      "opts": [
+        "Tariff costs only",
+        "Extra costs from nonnative status abroad",
+        "Only currency-translation losses",
+        "The need to hire locals"
+      ],
+      "ans": "B",
+      "exp": "Foreign firms face costs from unfamiliarity/discrimination."
+    },
+    {
+      "id": "CH1-M08",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "A firm tracking the triple bottom line is monitoring:",
+      "opts": [
+        "Revenue, profit, cash flow",
+        "Economic, social, environmental performance",
+        "Capex, opex, depreciation",
+        "Assets, liabilities, equity"
+      ],
+      "ans": "B",
+      "exp": "TBL = profit, people, planet."
+    },
+    {
+      "id": "CH1-M09",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "'Semiglobalization' suggests:",
+      "opts": [
+        "Borders no longer matter",
+        "Borders fully block market integration",
+        "Significant but incomplete cross-border integration",
+        "Only services cross borders"
+      ],
+      "ans": "C",
+      "exp": "Barriers remain, but do not fully isolate economies."
+    },
+    {
+      "id": "CH1-M10",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Which is the best example of 'reverse (frugal) innovation'?",
+      "opts": [
+        "A product designed in Germany for the EU",
+        "A product launched in India then scaled globally",
+        "A luxury brand expanding to the U.S.",
+        "A U.S. firm licensing IP to an OEM"
+      ],
+      "ans": "B",
+      "exp": "Reverse innovation starts in emerging economies then diffuses globally."
+    },
+    {
+      "id": "CH1-M11",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Which grouping includes South Africa?",
+      "opts": [
+        "BRIC",
+        "BRICS",
+        "G-7",
+        "ASEAN-5"
+      ],
+      "ans": "B",
+      "exp": "BRICS adds South Africa to BRIC."
+    },
+    {
+      "id": "CH1-M12",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "A 'black swan' event is best described as:",
+      "opts": [
+        "A likely event with low impact",
+        "An unpredictable, rare, high-impact shock",
+        "A cyclical recession",
+        "A normal variance in sales"
+      ],
+      "ans": "B",
+      "exp": "Rare and severe; requires risk planning."
+    },
+    {
+      "id": "CH1-M13",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "At the Base of the Pyramid (BoP), per-capita income is typically:",
+      "opts": [
+        "<$2,000 per year",
+        "$2,000–$5,000 per year",
+        "$5,000–$10,000 per year",
+        ">$10,000 per year"
+      ],
+      "ans": "A",
+      "exp": "BoP threshold ≈ <$2k/year."
+    },
+    {
+      "id": "CH1-M14",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Scenario planning is primarily used to:",
+      "opts": [
+        "Predict GDP precisely",
+        "Prepare for multiple plausible futures",
+        "Time currency markets",
+        "Replace budgeting"
+      ],
+      "ans": "B",
+      "exp": "It hedges against uncertainty."
+    },
+    {
+      "id": "CH1-M15",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Which statement is TRUE?",
+      "opts": [
+        "GNP excludes income from abroad",
+        "GNI is GDP plus income from nonresident sources",
+        "PPP is irrelevant for comparisons",
+        "GDP includes only firm output"
+      ],
+      "ans": "B",
+      "exp": "GNI = GDP + nonresident income; PPP compares real purchasing power."
+    },
+    {
+      "id": "CH1-M16",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "A 'global mindset' most closely means the ability to:",
+      "opts": [
+        "Be multilingual",
+        "Connect cross-border dots to see patterns",
+        "Relocate frequently",
+        "Negotiate only in English"
+      ],
+      "ans": "B",
+      "exp": "Recognize linkages across markets/institutions."
+    },
+    {
+      "id": "CH1-M17",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Which is a tension highlighted in the 'Global Value Chain resilience' debate?",
+      "opts": [
+        "Resilience vs. unit cost",
+        "FDI vs. exports",
+        "Profit vs. revenue",
+        "Growth vs. entry barriers"
+      ],
+      "ans": "A",
+      "exp": "Resilience often raises costs per unit."
+    },
+    {
+      "id": "CH1-M18",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "Deglobalization refers to:",
+      "opts": [
+        "Tighter global integration",
+        "Weaker international interdependence",
+        "A temporary downturn",
+        "A regional trade agreement"
+      ],
+      "ans": "B",
+      "exp": "Weakening cross-border ties."
+    },
+    {
+      "id": "CH1-M19",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "An NGO is:",
+      "opts": [
+        "A state agency",
+        "A non-governmental organization",
+        "A private equity fund",
+        "A labor union"
+      ],
+      "ans": "B",
+      "exp": "Neither governmental nor for-profit by definition."
+    },
+    {
+      "id": "CH1-M20",
+      "ch": "1",
+      "type": "MCQ",
+      "q": "A small tech firm chooses a niche export strategy rather than scale globally. Which chapter implication is reflected?",
+      "opts": [
+        "Only large firms can compete",
+        "Small firms can exploit niches",
+        "Globalization eliminates niches",
+        "FDI is mandatory"
+      ],
+      "ans": "B",
+      "exp": "Small firms can succeed through niches despite scale limits."
+    },
+    {
+      "id": "CH1-T01",
+      "ch": "1",
+      "type": "TF",
+      "q": "FDI means investing to control value-adding activities abroad, not just selling abroad.",
+      "ans": "True",
+      "exp": "Control/investment distinguishes FDI from trade."
+    },
+    {
+      "id": "CH1-T02",
+      "ch": "1",
+      "type": "TF",
+      "q": "Globalization has only one historical direction—ever upward.",
+      "ans": "False",
+      "exp": "The 'pendulum' can swing toward deglobalization."
+    },
+    {
+      "id": "CH1-T03",
+      "ch": "1",
+      "type": "TF",
+      "q": "PPP helps compare living standards by adjusting for price levels.",
+      "ans": "True",
+      "exp": "Purchasing power parity compares real buying power."
+    },
+    {
+      "id": "CH1-T04",
+      "ch": "1",
+      "type": "TF",
+      "q": "The triple bottom line ignores environmental outcomes.",
+      "ans": "False",
+      "exp": "It includes social and environmental results."
+    },
+    {
+      "id": "CH1-T05",
+      "ch": "1",
+      "type": "TF",
+      "q": "Liability of foreignness captures the built-in disadvantages foreign firms face in host countries.",
+      "ans": "True",
+      "exp": "Due to nonnative status."
+    },
+    {
+      "id": "CH1-T06",
+      "ch": "1",
+      "type": "TF",
+      "q": "Organizational slack can enable adaptation to shocks.",
+      "ans": "True",
+      "exp": "Slack is a resource cushion."
+    },
+    {
+      "id": "CH1-T07",
+      "ch": "1",
+      "type": "TF",
+      "q": "Reverse innovation typically launches first in advanced economies.",
+      "ans": "False",
+      "exp": "It starts in emerging economies."
+    },
+    {
+      "id": "CH1-T08",
+      "ch": "1",
+      "type": "TF",
+      "q": "Scenario planning chooses a single forecast and commits to it.",
+      "ans": "False",
+      "exp": "It prepares multiple scenarios."
+    },
+    {
+      "id": "CH1-T09",
+      "ch": "1",
+      "type": "TF",
+      "q": "BRIC includes Brazil, Russia, India, and China; adding South Africa yields BRICS.",
+      "ans": "True",
+      "exp": "Correct acronym expansion."
+    },
+    {
+      "id": "CH1-T10",
+      "ch": "1",
+      "type": "TF",
+      "q": "GNI and GNP are identical terms used by all organizations.",
+      "ans": "False",
+      "exp": "GNI is the term used by the World Bank; related but not identical historically."
+    },
+    {
+      "id": "CH2-M01",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Institutions are best described as:",
+      "opts": [
+        "Prices",
+        "The rules of the game",
+        "Firm routines",
+        "Technologies"
+      ],
+      "ans": "B",
+      "exp": "They set the formal/informal rules shaping behavior."
+    },
+    {
+      "id": "CH2-M02",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Institutional transition means:",
+      "opts": [
+        "A minor regulatory update",
+        "Fundamental, comprehensive changes in rules",
+        "A shift in exchange rates",
+        "A change in corporate strategy"
+      ],
+      "ans": "B",
+      "exp": "Deep changes in formal/informal rules."
+    },
+    {
+      "id": "CH2-M03",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Which pillar reflects internalized beliefs guiding behavior?",
+      "opts": [
+        "Regulatory",
+        "Normative",
+        "Cognitive",
+        "Coercive"
+      ],
+      "ans": "C",
+      "exp": "Cognitive pillar = taken-for-granted values."
+    },
+    {
+      "id": "CH2-M04",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "The normative pillar operates primarily through:",
+      "opts": [
+        "Government coercion",
+        "Market prices",
+        "Social norms/peer expectations",
+        "Court rulings"
+      ],
+      "ans": "C",
+      "exp": "Norms influence behavior via expectations."
+    },
+    {
+      "id": "CH2-M05",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Transaction costs refer to:",
+      "opts": [
+        "Accounting fees only",
+        "The costs of economic exchange/doing business",
+        "Taxes on imports",
+        "CAPEX for plants"
+      ],
+      "ans": "B",
+      "exp": "Costs associated with transactions."
+    },
+    {
+      "id": "CH2-M06",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Opportunism is defined as:",
+      "opts": [
+        "Rational self-interest",
+        "Self-interest seeking with guile",
+        "Altruism",
+        "CSR"
+      ],
+      "ans": "B",
+      "exp": "Deceptive advantage-taking."
+    },
+    {
+      "id": "CH2-M07",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Which statement captures the institution-based view’s first proposition?",
+      "opts": [
+        "Managers ignore institutions",
+        "Managers act within institutional constraints",
+        "Institutions do not matter in markets",
+        "Only informal rules guide firms"
+      ],
+      "ans": "B",
+      "exp": "Choices are made within institutional constraints."
+    },
+    {
+      "id": "CH2-M08",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "When formal constraints are unclear or fail, which rises in importance?",
+      "opts": [
+        "Regulatory pillar",
+        "Informal constraints",
+        "Exchange rates",
+        "Industry structure"
+      ],
+      "ans": "B",
+      "exp": "Informal constraints reduce uncertainty when formal rules falter."
+    },
+    {
+      "id": "CH2-M09",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "A 'nonmarket strategy' centers on:",
+      "opts": [
+        "Product pricing",
+        "Leveraging political and social relationships",
+        "Lean operations",
+        "R&D intensity"
+      ],
+      "ans": "B",
+      "exp": "Political/social relationship strategies."
+    },
+    {
+      "id": "CH2-M10",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Which political system concentrates power in one person/party?",
+      "opts": [
+        "Democracy",
+        "Commonwealth",
+        "Totalitarianism",
+        "Pluralism"
+      ],
+      "ans": "C",
+      "exp": "Totalitarianism/dictatorship centralizes power."
+    },
+    {
+      "id": "CH2-M11",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Authoritarianism is characterized by:",
+      "opts": [
+        "Competitive parties",
+        "Undermined political plurality",
+        "Direct democracy",
+        "Anarchic rule"
+      ],
+      "ans": "B",
+      "exp": "Plurality is undermined; power is concentrated."
+    },
+    {
+      "id": "CH2-M12",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Political risk is:",
+      "opts": [
+        "Interest-rate volatility",
+        "Risk from political changes harming firms",
+        "Exchange-rate variance",
+        "Commodity price shocks"
+      ],
+      "ans": "B",
+      "exp": "Changes that may negatively impact firms."
+    },
+    {
+      "id": "CH2-M13",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Common law systems primarily rely on:",
+      "opts": [
+        "Codes only",
+        "Religious texts",
+        "Judicial precedents and traditions",
+        "Executive decrees"
+      ],
+      "ans": "C",
+      "exp": "Case law tradition."
+    },
+    {
+      "id": "CH2-M14",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Intellectual property rights (IPR) include protection for:",
+      "opts": [
+        "Only patents",
+        "Patents, copyrights, trademarks",
+        "Only trademarks",
+        "Trade secrets only"
+      ],
+      "ans": "B",
+      "exp": "Core IPR categories."
+    },
+    {
+      "id": "CH2-M15",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "A pure market economy is characterized by:",
+      "opts": [
+        "Central planning",
+        "Laissez-faire market forces",
+        "State ownership of factors",
+        "Price controls"
+      ],
+      "ans": "B",
+      "exp": "Invisible hand dominates."
+    },
+    {
+      "id": "CH2-M16",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "A mixed economy:",
+      "opts": [
+        "Is purely market-driven",
+        "Combines market and command elements",
+        "Is purely command-driven",
+        "Eliminates the private sector"
+      ],
+      "ans": "B",
+      "exp": "Most countries operate mixed systems."
+    },
+    {
+      "id": "CH2-M17",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "State-owned enterprises (SOEs) are:",
+      "opts": [
+        "Owned by private investors",
+        "Owned and controlled by the state",
+        "Joint ventures only",
+        "NGOs"
+      ],
+      "ans": "B",
+      "exp": "State ownership by definition."
+    },
+    {
+      "id": "CH2-M18",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "Moral hazard in state bailouts arises because:",
+      "opts": [
+        "Firms over-save",
+        "Actors don’t bear full consequences of actions",
+        "Taxes are too high",
+        "Monopolies increase innovation"
+      ],
+      "ans": "B",
+      "exp": "Shielding from losses can breed recklessness."
+    },
+    {
+      "id": "CH2-M19",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "State capitalism blends:",
+      "opts": [
+        "Socialism and autarky",
+        "Capitalist markets with substantial state ownership",
+        "Command planning only",
+        "Anarchism with markets"
+      ],
+      "ans": "B",
+      "exp": "Market-based with strong state presence."
+    },
+    {
+      "id": "CH2-M20",
+      "ch": "2",
+      "type": "MCQ",
+      "q": "A 'hybrid organization' incorporates:",
+      "opts": [
+        "Only private logic",
+        "Elements from multiple institutional logics",
+        "Only public logic",
+        "Only religious logic"
+      ],
+      "ans": "B",
+      "exp": "Mixes different logics in one entity."
+    },
+    {
+      "id": "CH2-T01",
+      "ch": "2",
+      "type": "TF",
+      "q": "Institutions reduce uncertainty for economic actors.",
+      "ans": "True",
+      "exp": "Core function of institutions."
+    },
+    {
+      "id": "CH2-T02",
+      "ch": "2",
+      "type": "TF",
+      "q": "Bounded rationality means perfect information is available for all choices.",
+      "ans": "False",
+      "exp": "It recognizes limited information."
+    },
+    {
+      "id": "CH2-T03",
+      "ch": "2",
+      "type": "TF",
+      "q": "In transition economies, rules shift from central planning to markets.",
+      "ans": "True",
+      "exp": "They move toward market competition."
+    },
+    {
+      "id": "CH2-T04",
+      "ch": "2",
+      "type": "TF",
+      "q": "Theocratic law is unrelated to religion.",
+      "ans": "False",
+      "exp": "It is based on religious teachings."
+    },
+    {
+      "id": "CH2-T05",
+      "ch": "2",
+      "type": "TF",
+      "q": "Piracy is unauthorized use of intellectual property.",
+      "ans": "True",
+      "exp": "Correct definition."
+    },
+    {
+      "id": "CH2-T06",
+      "ch": "2",
+      "type": "TF",
+      "q": "Democracy is always more hostile to business than authoritarianism.",
+      "ans": "False",
+      "exp": "Hostility varies; broadly democracy is not worse for business."
+    },
+    {
+      "id": "CH2-T07",
+      "ch": "2",
+      "type": "TF",
+      "q": "Mixed economies are rare in the modern world.",
+      "ans": "False",
+      "exp": "Most economies are mixed."
+    },
+    {
+      "id": "CH2-T08",
+      "ch": "2",
+      "type": "TF",
+      "q": "Political risk and geopolitics are irrelevant for global strategy.",
+      "ans": "False",
+      "exp": "They are salient risks to manage."
+    },
+    {
+      "id": "CH2-T09",
+      "ch": "2",
+      "type": "TF",
+      "q": "Patents protect inventions; copyrights protect creative works; trademarks protect brands/designs.",
+      "ans": "True",
+      "exp": "Core IPR distinctions."
+    },
+    {
+      "id": "CH2-T10",
+      "ch": "2",
+      "type": "TF",
+      "q": "A nonmarket strategy can include building relationships with regulators and communities.",
+      "ans": "True",
+      "exp": "Political and social relationships matter."
+    },
+    {
+      "id": "CH3-M01",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Informal institutions include:",
+      "opts": [
+        "Tax codes",
+        "Cultural norms, ethics, and values",
+        "Property statutes",
+        "Patent courts"
+      ],
+      "ans": "B",
+      "exp": "Informal = culture/ethics/norms."
+    },
+    {
+      "id": "CH3-M02",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Ethnocentrism is:",
+      "opts": [
+        "Viewing all cultures as equal",
+        "A self-centered mentality that one’s culture is natural/superior",
+        "Being multilingual",
+        "Legal compliance"
+      ],
+      "ans": "B",
+      "exp": "Seeing one’s own culture as the standard."
+    },
+    {
+      "id": "CH3-M03",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Currently, the lingua franca of global business is:",
+      "opts": [
+        "French",
+        "English",
+        "Mandarin",
+        "Spanish"
+      ],
+      "ans": "B",
+      "exp": "English is the current global business language."
+    },
+    {
+      "id": "CH3-M04",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "High-context cultures tend to:",
+      "opts": [
+        "Rely on explicit contracts and words",
+        "Rely more on unspoken cues and relationships",
+        "Avoid relationships at work",
+        "Prefer written communication only"
+      ],
+      "ans": "B",
+      "exp": "Context and relationships carry meaning."
+    },
+    {
+      "id": "CH3-M05",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Which Hofstede dimension measures acceptance of unequal power?",
+      "opts": [
+        "Uncertainty avoidance",
+        "Power distance",
+        "Masculinity",
+        "Long-term orientation"
+      ],
+      "ans": "B",
+      "exp": "Power distance = acceptance of unequal power."
+    },
+    {
+      "id": "CH3-M06",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "In a culture with high uncertainty avoidance, managers are more likely to:",
+      "opts": [
+        "Embrace ambiguity",
+        "Prefer structured rules and procedures",
+        "Avoid planning",
+        "Favor improvisation over policies"
+      ],
+      "ans": "B",
+      "exp": "High UA seeks predictability."
+    },
+    {
+      "id": "CH3-M07",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Which statement about social stratification is accurate?",
+      "opts": [
+        "It never affects labor markets",
+        "It is the hierarchical arrangement of individuals into social categories",
+        "It is identical across countries",
+        "It eliminates social mobility"
+      ],
+      "ans": "B",
+      "exp": "Stratification organizes society into strata; mobility varies."
+    },
+    {
+      "id": "CH3-M08",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Ethical relativism asserts that:",
+      "opts": [
+        "There is one universal code of ethics",
+        "All ethical standards are contextually relative",
+        "Ethics are set by the UN",
+        "Only firms decide ethics"
+      ],
+      "ans": "B",
+      "exp": "Standards vary by context."
+    },
+    {
+      "id": "CH3-M09",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "The U.S. FCPA primarily prohibits:",
+      "opts": [
+        "Political donations",
+        "Bribery of foreign officials",
+        "Lobbying in Washington",
+        "Merger collusion"
+      ],
+      "ans": "B",
+      "exp": "Foreign Corrupt Practices Act bans bribery abroad."
+    },
+    {
+      "id": "CH3-M10",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Extraterritoriality means:",
+      "opts": [
+        "Only local laws apply",
+        "The reach of one country’s laws outside its borders",
+        "Immunity for expats",
+        "UN arbitration only"
+      ],
+      "ans": "B",
+      "exp": "Laws can apply extraterritorially."
+    },
+    {
+      "id": "CH3-M11",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "A proactive ethical strategy typically involves:",
+      "opts": [
+        "Doing the legal minimum",
+        "Preemptive compliance systems and stakeholder engagement",
+        "Ignoring norms",
+        "Delaying action until forced"
+      ],
+      "ans": "B",
+      "exp": "Go beyond compliance; engage early."
+    },
+    {
+      "id": "CH3-M12",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Cultural distance refers to:",
+      "opts": [
+        "Physical distance",
+        "Difference between two cultures on identifiable dimensions",
+        "Trade costs only",
+        "Legal differences only"
+      ],
+      "ans": "B",
+      "exp": "Measured along dimensions (e.g., individualism)."
+    },
+    {
+      "id": "CH3-M13",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Institutional distance measures dis/similarity across which elements?",
+      "opts": [
+        "GDP, PPP, GNI",
+        "Regulatory, normative, cognitive institutions",
+        "Tariffs and quotas",
+        "Exchange-rate regimes"
+      ],
+      "ans": "B",
+      "exp": "All three pillars across countries."
+    },
+    {
+      "id": "CH3-M14",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "In a low-context culture, effective communication is usually:",
+      "opts": [
+        "Implicit and relational",
+        "Explicit and direct",
+        "Nonverbal",
+        "Symbolic only"
+      ],
+      "ans": "B",
+      "exp": "Words carry most meaning; say it clearly."
+    },
+    {
+      "id": "CH3-M15",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Which best differentiates masculinity vs. femininity in Hofstede?",
+      "opts": [
+        "Religious affiliation",
+        "Degree of gender role differentiation at the societal level",
+        "Political system",
+        "Urbanization"
+      ],
+      "ans": "B",
+      "exp": "Masculinity = stronger differentiation; femininity = weaker."
+    },
+    {
+      "id": "CH3-M16",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "A firm facing conflicting local norm vs. home-country ethics should FIRST:",
+      "opts": [
+        "Ignore local norms",
+        "Apply legalistic minimums only",
+        "Consult code of conduct and evaluate middle-of-the-road principles",
+        "Exit the market"
+      ],
+      "ans": "C",
+      "exp": "Three guiding principles help navigate conflicts."
+    },
+    {
+      "id": "CH3-M17",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Which is NOT one of the four strategic responses to ethical challenges?",
+      "opts": [
+        "Reactive",
+        "Defensive",
+        "Accommodative",
+        "Exploitative"
+      ],
+      "ans": "D",
+      "exp": "The four are reactive, defensive, accommodative, proactive."
+    },
+    {
+      "id": "CH3-M18",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "Cultural intelligence refers to an individual’s ability to:",
+      "opts": [
+        "Memorize laws",
+        "Understand and adjust to new cultures",
+        "Predict exchange rates",
+        "Code-switch languages only"
+      ],
+      "ans": "B",
+      "exp": "CQ = adapt effectively across cultures."
+    },
+    {
+      "id": "CH3-M19",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "A high power-distance culture is more likely to:",
+      "opts": [
+        "Flatten hierarchies",
+        "Accept unequal distribution of authority",
+        "Prioritize egalitarian decision-making",
+        "Prefer consensus over rank"
+      ],
+      "ans": "B",
+      "exp": "Hierarchy and authority are more accepted."
+    },
+    {
+      "id": "CH3-M20",
+      "ch": "3",
+      "type": "MCQ",
+      "q": "An MNE entering a high-context market should emphasize:",
+      "opts": [
+        "Lengthy contracts only",
+        "Relationship-building and nonverbal cues",
+        "Email documentation over meetings",
+        "Price-only competition"
+      ],
+      "ans": "B",
+      "exp": "Contextual cues and relationships matter more."
+    },
+    {
+      "id": "CH3-T01",
+      "ch": "3",
+      "type": "TF",
+      "q": "Culture is the collective programming of the mind distinguishing groups.",
+      "ans": "True",
+      "exp": "Widely used definition."
+    },
+    {
+      "id": "CH3-T02",
+      "ch": "3",
+      "type": "TF",
+      "q": "Individualism means identity is fundamentally tied to the group.",
+      "ans": "False",
+      "exp": "That describes collectivism."
+    },
+    {
+      "id": "CH3-T03",
+      "ch": "3",
+      "type": "TF",
+      "q": "Long-term orientation emphasizes perseverance and savings for future betterment.",
+      "ans": "True",
+      "exp": "Core of the dimension."
+    },
+    {
+      "id": "CH3-T04",
+      "ch": "3",
+      "type": "TF",
+      "q": "Ethical imperialism assumes a single universal ethical code.",
+      "ans": "True",
+      "exp": "Opposite of relativism."
+    },
+    {
+      "id": "CH3-T05",
+      "ch": "3",
+      "type": "TF",
+      "q": "Corruption is the abuse of public power for private benefit.",
+      "ans": "True",
+      "exp": "Often in the form of bribery."
+    },
+    {
+      "id": "CH3-T06",
+      "ch": "3",
+      "type": "TF",
+      "q": "In-group refers to 'them' while out-group refers to 'us'.",
+      "ans": "False",
+      "exp": "In-group = 'us'; out-group = 'them'."
+    },
+    {
+      "id": "CH3-T07",
+      "ch": "3",
+      "type": "TF",
+      "q": "Cultural convergence vs. divergence is a key debate in IB.",
+      "ans": "True",
+      "exp": "Debate on whether cultures are becoming more alike."
+    },
+    {
+      "id": "CH3-T08",
+      "ch": "3",
+      "type": "TF",
+      "q": "Managers can only choose reactive or defensive ethical strategies.",
+      "ans": "False",
+      "exp": "They can also choose accommodative or proactive."
+    },
+    {
+      "id": "CH3-T09",
+      "ch": "3",
+      "type": "TF",
+      "q": "Extraterritoriality means the UN enforces local laws.",
+      "ans": "False",
+      "exp": "It concerns one country’s laws reaching beyond borders."
+    },
+    {
+      "id": "CH3-T10",
+      "ch": "3",
+      "type": "TF",
+      "q": "Enhancing cultural intelligence is recommended managerial savvy.",
+      "ans": "True",
+      "exp": "Explicitly emphasized."
+    },
+    {
+      "id": "CH4-M01",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Resources and capabilities are:",
+      "opts": [
+        "Only physical assets",
+        "Only skills/knowledge",
+        "Both tangible and intangible assets used to implement strategy",
+        "Only financial balances"
+      ],
+      "ans": "C",
+      "exp": "They include tangible and intangible assets."
+    },
+    {
+      "id": "CH4-M02",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which is NOT a dynamic capability?",
+      "opts": [
+        "Sensing",
+        "Seizing",
+        "Reconfiguration",
+        "Hedging"
+      ],
+      "ans": "D",
+      "exp": "Dynamic capabilities are sensing, seizing, reconfiguring."
+    },
+    {
+      "id": "CH4-M03",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "A value chain is:",
+      "opts": [
+        "A supply contract",
+        "A stream of activities adding value from upstream to downstream",
+        "A pricing algorithm",
+        "A logistics provider"
+      ],
+      "ans": "B",
+      "exp": "Activities that add value end-to-end."
+    },
+    {
+      "id": "CH4-M04",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Benchmarking asks whether the firm can:",
+      "opts": [
+        "Grow GDP",
+        "Outperform rivals on a specific activity",
+        "Eliminate competition",
+        "Avoid regulation"
+      ],
+      "ans": "B",
+      "exp": "Compare against best-in-class for activities."
+    },
+    {
+      "id": "CH4-M05",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which activity is MOST suitable for outsourcing?",
+      "opts": [
+        "Highly proprietary, firm-specific R&D",
+        "Industry-common, commoditized support function",
+        "Unique culture-carrying HR processes",
+        "Core algorithm design"
+      ],
+      "ans": "B",
+      "exp": "Commodity/common activities suit outsourcing."
+    },
+    {
+      "id": "CH4-M06",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Offshoring is best defined as:",
+      "opts": [
+        "Domestic outsourcing",
+        "Outsourcing to a foreign firm",
+        "In-house foreign subsidiary only",
+        "Licensing IP"
+      ],
+      "ans": "B",
+      "exp": "Turning work over to a foreign supplier."
+    },
+    {
+      "id": "CH4-M07",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Captive sourcing (FDI) means:",
+      "opts": [
+        "Hiring a domestic contractor",
+        "Setting up a foreign subsidiary to do work in-house",
+        "Licensing to an OEM",
+        "Switching suppliers frequently"
+      ],
+      "ans": "B",
+      "exp": "In-house abroad via FDI."
+    },
+    {
+      "id": "CH4-M08",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which VRIO element asks if rivals can easily copy the resource?",
+      "opts": [
+        "Valuable",
+        "Rare",
+        "Imitable",
+        "Organized"
+      ],
+      "ans": "C",
+      "exp": "I = Imitability barrier."
+    },
+    {
+      "id": "CH4-M09",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "A resource that is V, R, and I but the firm is NOT organized to exploit it yields:",
+      "opts": [
+        "Sustained advantage",
+        "Unused potential/temporary advantage",
+        "Competitive disadvantage",
+        "Guaranteed rents"
+      ],
+      "ans": "B",
+      "exp": "Without 'O', value capture is limited."
+    },
+    {
+      "id": "CH4-M10",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Causal ambiguity helps sustain advantage because:",
+      "opts": [
+        "It simplifies imitation",
+        "It makes the true drivers of success hard to identify",
+        "It reduces costs directly",
+        "It replaces patents"
+      ],
+      "ans": "B",
+      "exp": "Competitors can’t pinpoint what to copy."
+    },
+    {
+      "id": "CH4-M11",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Social complexity contributes to advantage by:",
+      "opts": [
+        "Standardizing routines",
+        "Creating intricate, hard-to-replicate interactions and culture",
+        "Reducing training time",
+        "Enforcing strict silos"
+      ],
+      "ans": "B",
+      "exp": "Complex social systems resist imitation."
+    },
+    {
+      "id": "CH4-M12",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which sequence best reflects a make/buy/location decision set?",
+      "opts": [
+        "Make vs. buy; onshore vs. offshore; captive vs. external",
+        "Onshore vs. offshore only",
+        "Price vs. quality only",
+        "Lease vs. buy equipment"
+      ],
+      "ans": "A",
+      "exp": "Outsourcing mode and location choices go together."
+    },
+    {
+      "id": "CH4-M13",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which term fits: a firm executes another firm’s designs and manufactures the product?",
+      "opts": [
+        "OBM",
+        "ODM",
+        "OEM",
+        "BPO"
+      ],
+      "ans": "C",
+      "exp": "OEM manufactures to provided designs; ODM designs + manufactures; OBM designs + manufactures + brands."
+    },
+    {
+      "id": "CH4-M14",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Reverse innovation in Ch.4 context emphasizes that:",
+      "opts": [
+        "Scale always beats scope",
+        "Innovations may start abroad then spread home",
+        "Only advanced-economy labs innovate",
+        "3D printing eliminates R&D"
+      ],
+      "ans": "B",
+      "exp": "Adoption abroad precedes home diffusion."
+    },
+    {
+      "id": "CH4-M15",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which development challenges the primacy of large-scale production?",
+      "opts": [
+        "Additive manufacturing (3D printing)",
+        "Lean accounting",
+        "Just-in-time",
+        "Vertical integration"
+      ],
+      "ans": "A",
+      "exp": "3D printing can shift emphasis from scale."
+    },
+    {
+      "id": "CH4-M16",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "'Servitization' means:",
+      "opts": [
+        "Outsourcing services",
+        "Blending manufacturing with services for value",
+        "Cutting service lines",
+        "Licensing only"
+      ],
+      "ans": "B",
+      "exp": "Smart combination of product + services."
+    },
+    {
+      "id": "CH4-M17",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "A firm that relentlessly imitates rivals without VRIO will most likely achieve:",
+      "opts": [
+        "Sustained advantage",
+        "Competitive parity at best",
+        "Guaranteed cost leadership",
+        "First-mover rents"
+      ],
+      "ans": "B",
+      "exp": "Imitation alone rarely sustains advantage."
+    },
+    {
+      "id": "CH4-M18",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Which condition most strongly argues for reshoring?",
+      "opts": [
+        "Falling domestic wages",
+        "Quality concerns and rising foreign wages",
+        "Unlimited foreign subsidies",
+        "No IP risks abroad"
+      ],
+      "ans": "B",
+      "exp": "Common drivers: quality/IP/tariffs/wage shifts."
+    },
+    {
+      "id": "CH4-M19",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "Business Process Outsourcing (BPO) most often includes:",
+      "opts": [
+        "Equity underwriting",
+        "Customer service, accounting, HR processes",
+        "Core algorithm design",
+        "Board governance"
+      ],
+      "ans": "B",
+      "exp": "Back-office/frontline processes to third parties."
+    },
+    {
+      "id": "CH4-M20",
+      "ch": "4",
+      "type": "MCQ",
+      "q": "According to management savvy guidance, students should aim to become 'untouchables' meaning:",
+      "opts": [
+        "Willing to relocate",
+        "Jobs hard to outsource due to unique capabilities",
+        "Only technical specialists",
+        "Union-protected"
+      ],
+      "ans": "B",
+      "exp": "Build capabilities that resist outsourcing."
+    },
+    {
+      "id": "CH4-T01",
+      "ch": "4",
+      "type": "TF",
+      "q": "VRIO stands for Value, Rarity, Imitability, and Organization.",
+      "ans": "True",
+      "exp": "Core resource-based framework."
+    },
+    {
+      "id": "CH4-T02",
+      "ch": "4",
+      "type": "TF",
+      "q": "Intangible assets can never be a source of sustained advantage.",
+      "ans": "False",
+      "exp": "Intangibles (brand, culture) can be powerful."
+    },
+    {
+      "id": "CH4-T03",
+      "ch": "4",
+      "type": "TF",
+      "q": "Commoditization erodes uniqueness and margins over time.",
+      "ans": "True",
+      "exp": "Competition turns unique offerings into commodities."
+    },
+    {
+      "id": "CH4-T04",
+      "ch": "4",
+      "type": "TF",
+      "q": "Onshoring means outsourcing to a domestic supplier.",
+      "ans": "True",
+      "exp": "Domestic external provider."
+    },
+    {
+      "id": "CH4-T05",
+      "ch": "4",
+      "type": "TF",
+      "q": "Captive sourcing is the same as outsourcing to a foreign vendor.",
+      "ans": "False",
+      "exp": "Captive = in-house abroad via FDI."
+    },
+    {
+      "id": "CH4-T06",
+      "ch": "4",
+      "type": "TF",
+      "q": "Complementary assets help capture value from a core resource.",
+      "ans": "True",
+      "exp": "They enable advantage realization."
+    },
+    {
+      "id": "CH4-T07",
+      "ch": "4",
+      "type": "TF",
+      "q": "Causal ambiguity makes imitation easier for rivals.",
+      "ans": "False",
+      "exp": "It makes drivers of success obscure."
+    },
+    {
+      "id": "CH4-T08",
+      "ch": "4",
+      "type": "TF",
+      "q": "ODM both designs and manufactures products.",
+      "ans": "True",
+      "exp": "ODM handles design + manufacturing."
+    },
+    {
+      "id": "CH4-T09",
+      "ch": "4",
+      "type": "TF",
+      "q": "Reshoring moves activities back to the firm’s home country.",
+      "ans": "True",
+      "exp": "Opposite of offshoring."
+    },
+    {
+      "id": "CH4-T10",
+      "ch": "4",
+      "type": "TF",
+      "q": "Managers should only benchmark and imitate to win long term.",
+      "ans": "False",
+      "exp": "Benchmarking alone rarely sustains advantage; build VRIO."
+    }
+  ]
+}

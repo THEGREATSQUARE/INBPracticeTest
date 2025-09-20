@@ -1,0 +1,113 @@
+INB 300 Chapter 4 Study Guide
+
+Purpose and Perspective of the Chapter
+
+The purpose of this chapter is to explore how certain resources and capabilities specific to a winning firm can lead to success over its competitors. In this chapter, we first define resources and capabilities and then discuss the value chain analysis, concentrating on the decision to keep an activity in-house or outsource it. We then focus on the VRIO framework: value (V), rarity (R), imitability (I), and organization (O). Debates and extensions follow
+
+UNDERSTANDING RESOURCES AND CAPABILITIES (4-1, PPT Slides 3–7)
+
+Key Concepts
+
+Resources and capabilities are the tangible and intangible assets a firm uses to choose and implement its strategies.
+
+Key Terms
+
+SWOT analysis: A tool for determining a firm’s strengths (S), weaknesses (W), opportunities (O), and threats (T)
+
+Resource: The tangible and intangible assets a firm uses to choose and implement its strategies
+
+Capability: The tangible and intangible assets a firm uses to choose and implement its strategies
+
+Tangible resource and capability: Assets that are observable and easily quantified
+
+Intangible resource and capability: Assets that are hard to observe and difficult (if not impossible) to quantify
+
+Sensing: Abilities to discover opportunities
+
+Seizing: Abilities to capture value from opportunities
+
+Reconfiguration: Abilities to remain flexible by redesigning business models, realigning assets, and revamping routines
+
+VALUE CHAIN AND OUTSOURCING (4-2, PPT Slides 8–12)
+
+Key Concepts
+
+A value chain consists of a stream of activities from upstream to downstream that add value. A SWOT analysis engages managers to ascertain a firm’s strengths and weaknesses on an activity-by-activity basis relative to rivals.
+
+Outsourcing is turning over all or part of an organization’s activity to an outside supplier. An activity with a high degree of industry commonality and a high degree of commoditization can be outsourced, and an industry-specific and firm specific (proprietary) activity is better performed in-house.
+
+On any given activity, the four choices for managers in terms of modes and locations are (1) offshoring, (2) onshoring, (3) captive sourcing/FDI, and (4) domestic in-house activity.
+
+Key Terms
+
+Value chain: A stream of activities from upstream to downstream that add value
+
+Benchmarking: Examining whether a firm has resources and capabilities to perform a particular activity in a manner superior to competitors
+
+Commoditization: A process of market competition through which unique products that command high prices and high margins gradually lose their ability to do so, thus becoming commodities
+
+Offshoring: Outsourcing to an international or foreign firm
+
+Onshoring: Outsourcing to a domestic firm
+
+Captive sourcing: Setting up subsidiaries abroad so that the work done is in-house but the location is foreign; Also known as foreign direct investment (FDI)
+
+FROM SWOT TO VRIO (4-3, PPT Slides 13–21)
+
+Key Concepts
+
+SWOT (Strengths, Weaknesses, Opportunities, and Threats) is a traditional analytical tool. A VRIO framework suggests that only resources and capabilities that are valuable, rare, inimitable, and organizationally embedded will generate sustainable competitive advantage.
+
+Key Terms
+
+VRIO framework: A resource-based framework that focuses on the value (V), rarity (R), imitability (I), and organizational (O) aspects of resources and capabilities
+
+Causal ambiguity: The difficulty of identifying the actual cause of a firm’s successful performance
+
+Complementary asset: The combination of numerous resources and assets that enable a firm to gain a competitive advantage
+
+Social complexity: The socially intricate and interdependent ways that firms are typically organized
+
+DEBATES AND EXTENSIONS (4-4, PPT Slides 22–27)
+
+Key Concepts
+
+Three debates are discussed: 
+
+Are domestic capabilities the same as international (cross-border) capabilities? 
+
+For Western firms and economies, is offshoring beneficial or detrimental in the long run?
+
+Has the emergence of 3D printing shifted the emphasis from economies of scale?
+
+Key Terms
+
+Reverse innovation: An innovation that is first adopted in other countries and is then diffused to the home country and the rest of the world
+
+Business process outsourcing (BPO): Outsourcing business processes to third-party providers
+
+Original equipment manufacturer (OEM): Firm that executes design blueprints provided by other firms and manufactures such products
+
+Original design manufacturer (ODM): Firm that both designs and manufactures products
+
+Original brand manufacturer (OBM): Firm that designs, manufactures, and markets branded products
+
+Reshoring: Moving formerly offshored activities back to the home country of the focal firm
+
+Additive manufacturing (or 3D printing): Manufacturing three-dimensional products from a digital model by using additive processes, where products are created by adding successive layers of material; This contrasts traditional manufacturing, which can be labeled “subtractive” processes centered on removing material by methods such as cutting and drilling
+
+Servitization: Smart combination of manufacturing and services
+
+MANAGEMENT SAVVY (4-5, PPT Slides 28–29)
+
+Key Concepts
+
+Managers need to build firm strengths based on the VRIO framework. 
+
+Relentless imitation or benchmarking, while important, is not likely to be a successful strategy. 
+
+Managers need to build up resources and capabilities for future competition. 
+
+Students are advised to make themselves “untouchables” whose jobs cannot be outsourced.
+
+•••
