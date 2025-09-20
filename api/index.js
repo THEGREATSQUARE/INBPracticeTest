@@ -111,6 +111,100 @@ app.get('/api/test', (req, res) => {
   });
 });
 
+// Get flashcards
+app.get('/api/flashcards', (req, res) => {
+  try {
+    const chapter = req.query.chapter;
+    let flashcards = questionBank.questions;
+    
+    // Filter by chapter if specified
+    if (chapter) {
+      flashcards = flashcards.filter(q => q.ch === chapter);
+    }
+    
+    // Convert questions to flashcard format
+    const flashcardData = flashcards.map(q => ({
+      front: q.q,
+      back: {
+        answer: q.opts ? q.opts[q.ans.charCodeAt(0) - 65] : q.ans,
+        explanation: q.exp || 'No explanation available'
+      }
+    }));
+    
+    res.json(flashcardData);
+  } catch (error) {
+    console.error('Error loading flashcards:', error);
+    res.status(500).json({ error: 'Failed to load flashcards' });
+  }
+});
+
+// Get matching game data
+app.get('/api/matching', (req, res) => {
+  try {
+    const chapter = req.query.chapter;
+    let questions = questionBank.questions;
+    
+    // Filter by chapter if specified
+    if (chapter) {
+      questions = questions.filter(q => q.ch === chapter);
+    }
+    
+    // Create matching pairs from questions
+    const matchingPairs = questions.slice(0, 8).map(q => ({
+      term: q.q,
+      definition: q.exp || 'No definition available'
+    }));
+    
+    res.json(matchingPairs);
+  } catch (error) {
+    console.error('Error loading matching data:', error);
+    res.status(500).json({ error: 'Failed to load matching data' });
+  }
+});
+
+// Submit quiz results
+app.post('/api/submit-quiz', (req, res) => {
+  try {
+    const { answers, timeSpent, chapter } = req.body;
+    
+    // Calculate score
+    const totalQuestions = Object.keys(answers).length;
+    const correctAnswers = Object.values(answers).filter(answer => answer.correct).length;
+    const score = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+    
+    // Update user progress
+    userProgress.statistics.totalQuestions += totalQuestions;
+    userProgress.statistics.correctAnswers += correctAnswers;
+    
+    if (chapter && userProgress.statistics.chapters[chapter]) {
+      userProgress.statistics.chapters[chapter].attempted += totalQuestions;
+      userProgress.statistics.chapters[chapter].correct += correctAnswers;
+    }
+    
+    // Store session
+    userProgress.sessions.push({
+      score,
+      correctAnswers,
+      totalQuestions,
+      timeSpent,
+      chapter,
+      timestamp: new Date().toISOString()
+    });
+    
+    res.json({
+      score,
+      correctAnswers,
+      totalQuestions,
+      timeSpent,
+      chapter,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.error('Error submitting quiz:', error);
+    res.status(500).json({ error: 'Failed to submit quiz' });
+  }
+});
+
 // Serve the HTML page with embedded CSS and JS for Vercel
 app.get('/', (req, res) => {
   try {
