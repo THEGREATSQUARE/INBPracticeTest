@@ -111,11 +111,34 @@ app.get('/api/test', (req, res) => {
   });
 });
 
-// Serve the original HTML page
+// Serve the HTML page with embedded CSS and JS for Vercel
 app.get('/', (req, res) => {
   try {
+    // Read the HTML file
     const htmlPath = path.join(__dirname, '..', 'public', 'index.html');
-    res.sendFile(htmlPath);
+    let htmlContent = fs.readFileSync(htmlPath, 'utf8');
+    
+    // Read CSS file
+    const cssPath = path.join(__dirname, '..', 'public', 'css', 'style.css');
+    const cssContent = fs.readFileSync(cssPath, 'utf8');
+    
+    // Read JS file
+    const jsPath = path.join(__dirname, '..', 'public', 'js', 'app.js');
+    const jsContent = fs.readFileSync(jsPath, 'utf8');
+    
+    // Replace CSS link with embedded CSS
+    htmlContent = htmlContent.replace(
+      '<link rel="stylesheet" href="css/style.css">',
+      `<style>${cssContent}</style>`
+    );
+    
+    // Replace JS script with embedded JS
+    htmlContent = htmlContent.replace(
+      '<script src="js/app.js"></script>',
+      `<script>${jsContent}</script>`
+    );
+    
+    res.send(htmlContent);
   } catch (error) {
     console.error('Error serving main page:', error);
     res.status(500).send('Error loading page');
