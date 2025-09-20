@@ -9,38 +9,47 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Load question bank
-let questionBank;
-try {
+// Load question banks
+let easyQuestionBank, hardQuestionBank;
+let currentQuestionBank = 'easy';
+
+// Function to load question bank from file
+function loadQuestionBank(fileName, fallbackName) {
   const possiblePaths = [
-    path.join(__dirname, 'questionbank.json'),
-    path.join(__dirname, '..', 'questionbank.json'),
-    path.join(process.cwd(), 'questionbank.json'),
-    './questionbank.json'
+    path.join(__dirname, fileName),
+    path.join(__dirname, '..', fileName),
+    path.join(process.cwd(), fileName),
+    `./${fileName}`
   ];
   
   let data;
   for (const filePath of possiblePaths) {
     try {
       data = fs.readFileSync(filePath, 'utf8');
-      console.log('Found questionbank.json at:', filePath);
+      console.log(`Found ${fileName} at:`, filePath);
       break;
     } catch (err) {
-      console.log('Tried path:', filePath, '- not found');
+      console.log(`Tried path:`, filePath, '- not found');
     }
   }
   
   if (!data) {
-    throw new Error('Could not find questionbank.json');
+    throw new Error(`Could not find ${fileName}`);
   }
   
-  questionBank = JSON.parse(data);
-  console.log('Question bank loaded successfully with', questionBank.questions.length, 'questions');
+  return JSON.parse(data);
+}
+
+// Load easy question bank
+try {
+  easyQuestionBank = loadQuestionBank('questionbank.json', 'Easy Questions');
+  console.log('Easy question bank loaded successfully with', easyQuestionBank.questions.length, 'questions');
 } catch (error) {
-  console.error('Error loading question bank:', error);
-  questionBank = {
+  console.error('Error loading easy question bank:', error);
+  easyQuestionBank = {
     meta: {
       course: "INB 300 - International Business",
+      edition: "Easy Questions",
       chapters: {
         "1": "Global Business",
         "2": "Institutions & Business Environment", 
@@ -50,7 +59,7 @@ try {
     },
     questions: [
       {
-        id: "FALLBACK-001",
+        id: "EASY-001",
         ch: "1",
         type: "MCQ",
         q: "What is International Business?",
@@ -60,6 +69,42 @@ try {
       }
     ]
   };
+}
+
+// Load hard question bank
+try {
+  hardQuestionBank = loadQuestionBank('hardquestions.json', 'Hard Questions');
+  console.log('Hard question bank loaded successfully with', hardQuestionBank.questions.length, 'questions');
+} catch (error) {
+  console.error('Error loading hard question bank:', error);
+  hardQuestionBank = {
+    meta: {
+      course: "INB 300 - International Business",
+      edition: "Hard Questions",
+      chapters: {
+        "1": "Global Business",
+        "2": "Institutions & Business Environment", 
+        "3": "Culture, Ethics & Informal Institutions",
+        "4": "Resources, Capabilities & Strategy"
+      }
+    },
+    questions: [
+      {
+        id: "HARD-001",
+        ch: "1",
+        type: "MCQ",
+        q: "What is International Business?",
+        opts: ["Business within one country", "Business across borders", "Only exports", "Only imports"],
+        ans: "B",
+        exp: "International business involves business activities across national borders."
+      }
+    ]
+  };
+}
+
+// Get current question bank
+function getCurrentQuestionBank() {
+  return currentQuestionBank === 'easy' ? easyQuestionBank : hardQuestionBank;
 }
 
 // Store user progress
@@ -79,23 +124,48 @@ let userProgress = {
 
 // API Routes
 app.get('/api/questions', (req, res) => {
-  res.json(questionBank.questions);
+  res.json(getCurrentQuestionBank().questions);
 });
 
 app.get('/api/questions/chapter/:chapter', (req, res) => {
   const chapter = req.params.chapter;
-  const chapterQuestions = questionBank.questions.filter(q => q.ch === chapter);
+  const chapterQuestions = getCurrentQuestionBank().questions.filter(q => q.ch === chapter);
   res.json(chapterQuestions);
 });
 
 app.get('/api/questions/random/:count', (req, res) => {
   const count = parseInt(req.params.count) || 10;
-  const shuffled = [...questionBank.questions].sort(() => 0.5 - Math.random());
+  const shuffled = [...getCurrentQuestionBank().questions].sort(() => 0.5 - Math.random());
   res.json(shuffled.slice(0, count));
 });
 
 app.get('/api/meta', (req, res) => {
-  res.json(questionBank.meta);
+  res.json(getCurrentQuestionBank().meta);
+});
+
+// Switch question bank difficulty
+app.post('/api/switch-difficulty', (req, res) => {
+  const { difficulty } = req.body;
+  if (difficulty === 'easy' || difficulty === 'hard') {
+    currentQuestionBank = difficulty;
+    res.json({ 
+      success: true, 
+      difficulty: currentQuestionBank,
+      questionCount: getCurrentQuestionBank().questions.length,
+      edition: getCurrentQuestionBank().meta.edition
+    });
+  } else {
+    res.status(400).json({ error: 'Invalid difficulty. Use "easy" or "hard"' });
+  }
+});
+
+// Get current difficulty
+app.get('/api/difficulty', (req, res) => {
+  res.json({ 
+    difficulty: currentQuestionBank,
+    questionCount: getCurrentQuestionBank().questions.length,
+    edition: getCurrentQuestionBank().meta.edition
+  });
 });
 
 app.get('/api/statistics', (req, res) => {
@@ -106,7 +176,9 @@ app.get('/api/test', (req, res) => {
   res.json({ 
     status: 'OK', 
     message: 'API is working',
-    questionCount: questionBank.questions.length,
+    questionCount: getCurrentQuestionBank().questions.length,
+    difficulty: currentQuestionBank,
+    edition: getCurrentQuestionBank().meta.edition,
     timestamp: new Date().toISOString()
   });
 });
@@ -115,7 +187,7 @@ app.get('/api/test', (req, res) => {
 app.get('/api/flashcards', (req, res) => {
   try {
     const chapter = req.query.chapter;
-    let flashcards = questionBank.questions;
+    let flashcards = getCurrentQuestionBank().questions;
     
     // Filter by chapter if specified
     if (chapter) {
@@ -142,7 +214,7 @@ app.get('/api/flashcards', (req, res) => {
 app.get('/api/matching', (req, res) => {
   try {
     const chapter = req.query.chapter;
-    let questions = questionBank.questions;
+    let questions = getCurrentQuestionBank().questions;
     
     // Filter by chapter if specified
     if (chapter) {
