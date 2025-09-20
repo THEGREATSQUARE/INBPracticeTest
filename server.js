@@ -180,12 +180,17 @@ app.get('/', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`INB 300 Study Guide server running on http://localhost:${PORT}`);
-  console.log('Study modes available:');
-  console.log('- Practice Tests');
-  console.log('- Flashcards');
-  console.log('- Matching Game');
-  console.log('- Chapter Quizzes');
-  console.log('- Random Questions');
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`INB 300 Study Guide server running on http://localhost:${PORT}`);
+    console.log('Study modes available:');
+    console.log('- Practice Tests');
+    console.log('- Flashcards');
+    console.log('- Matching Game');
+    console.log('- Chapter Quizzes');
+    console.log('- Random Questions');
+  });
+}
+
+// Export for Vercel
+module.exports = app;
