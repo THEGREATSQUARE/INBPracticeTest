@@ -12,7 +12,6 @@ let selectedMatchingItems = [];
 let matchingMatches = 0;
 let matchingStartTime;
 let matchingTimer;
-let currentDifficulty = 'easy';
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', function() {
@@ -27,9 +26,6 @@ function initializeApp() {
     
     // Load course metadata
     loadCourseMeta();
-    
-    // Load current difficulty
-    loadCurrentDifficulty();
 }
 
 function setupEventListeners() {
@@ -703,122 +699,6 @@ function loadCourseMeta() {
             console.error('Error loading course metadata:', error);
         });
 }
-
-// Difficulty toggle functions
-function toggleDifficulty() {
-    const toggle = document.getElementById('difficultyToggle');
-    const newDifficulty = toggle.checked ? 'hard' : 'easy';
-    
-    if (newDifficulty !== currentDifficulty) {
-        switchDifficulty(newDifficulty);
-    }
-}
-
-function switchDifficulty(difficulty) {
-    showLoading();
-    
-    fetch('/api/switch-difficulty', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ difficulty: difficulty })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            currentDifficulty = difficulty;
-            updateDifficultyUI();
-            loadCourseMeta(); // Reload metadata for new question bank
-            hideLoading();
-            
-            // Show success message
-            showNotification(`Switched to ${difficulty} questions!`, 'success');
-        } else {
-            hideLoading();
-            showNotification('Failed to switch difficulty', 'error');
-        }
-    })
-    .catch(error => {
-        hideLoading();
-        console.error('Error switching difficulty:', error);
-        showNotification('Error switching difficulty', 'error');
-    });
-}
-
-function loadCurrentDifficulty() {
-    fetch('/api/difficulty')
-        .then(response => response.json())
-        .then(data => {
-            currentDifficulty = data.difficulty;
-            updateDifficultyUI();
-        })
-        .catch(error => {
-            console.error('Error loading current difficulty:', error);
-        });
-}
-
-function updateDifficultyUI() {
-    const toggle = document.getElementById('difficultyToggle');
-    toggle.checked = currentDifficulty === 'hard';
-}
-
-function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.textContent = message;
-    
-    // Style the notification
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 1rem 1.5rem;
-        border-radius: 8px;
-        color: white;
-        font-weight: 500;
-        z-index: 10000;
-        animation: slideIn 0.3s ease;
-        max-width: 300px;
-    `;
-    
-    // Set background color based on type
-    if (type === 'success') {
-        notification.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-    } else if (type === 'error') {
-        notification.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
-    } else {
-        notification.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-    }
-    
-    // Add to page
-    document.body.appendChild(notification);
-    
-    // Remove after 3 seconds
-    setTimeout(() => {
-        notification.style.animation = 'slideOut 0.3s ease';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
-    }, 3000);
-}
-
-// Add CSS animations for notifications
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from { transform: translateX(100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-    }
-    @keyframes slideOut {
-        from { transform: translateX(0); opacity: 1; }
-        to { transform: translateX(100%); opacity: 0; }
-    }
-`;
-document.head.appendChild(style);
 
 function updatePracticeOptions() {
     // This function can be used to update practice test options dynamically
